@@ -1,0 +1,16 @@
+csv:
+  source_file: data/sales.csv
+  destination_dir: data_lake/raw/csv
+
+api:
+  url: https://jsonplaceholder.typicode.com/posts
+  destination_dir: data_lake/raw/api
+  file_name: posts
+
+database:
+  db_url: postgresql+psycopg2://username:password@localhost:5432/mydb
+  table_name: customers
+  destination_dir: data_lake/raw/database
+
+warehouse:
+  db_url: postgresql+psycopg2://username:password@localhost:5432/warehouse_db
